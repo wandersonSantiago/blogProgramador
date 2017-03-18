@@ -1,0 +1,38 @@
+ <meta charset="UTF-8">
+  <div class="row center-align">  
+			 <div class="row">
+			 <div class="col s12 m2"></div>
+		        <div class="col s12 m8">
+		          <div class="card">		        		        
+		            <div class="card-content">
+		            <div class="card-image">
+		            <h3>Postagem</h3> 
+		            </div>	<br><br>
+		             <div class="row">
+					        <div class="input-field col s6">
+					          <input id="busca" type="text" ng-model="busca" class="validate">
+					          <label for="busca">Buscar</label>
+					        </div>
+					     </div>
+				            <table >
+						        <thead>
+						          <tr>
+						              <th data-field="id">Descrição</th>
+						              <th data-field="name">Tipo</th>
+						              <th data-field="name">Data de postagem</th>
+						          </tr>
+						        </thead>						
+						        <tbody ng-repeat="postagem in postagemCtrl.listarPostagens | filter : busca">
+						          <tr>
+						            <td>{{postagem.titulo}}</td>
+						            <td>{{postagem.subcategorias.descricao}}</td>
+						            <td>{{postagem.dataPostagem | date : 'dd/MM/yyyy'}}</td>
+						            <td><button ui-sref="postagemEditar({idPostagem : postagem.id })"><i class="tiny material-icons">mode_edit</i></button></td>
+						          </tr>						          
+						        </tbody>
+						   </table>	            
+		         </div>
+        </div>
+     </div>
+  </div>
+</div>

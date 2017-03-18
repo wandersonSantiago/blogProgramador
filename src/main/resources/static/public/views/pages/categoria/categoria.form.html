@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+<form  ng-submit="categoriaCtrl.submit()">
+  <div class="row center-align">  
+			 <div class="row">
+			 <div class="col s12 m2"></div>
+		        <div class="col s12 m8">
+		          <div class="card">		        		        
+		            <div class="card-content">
+		            <div class="card-image">
+		            <h3>Categoria</h3> 
+		            </div>	<br><br>		          
+					  <div class="row" >
+					  		<div class="col s6">
+						      <label>Selecione </label>
+								  <select class="browser-default" ng-model="categoriaCtrl.categoria.tipo" 
+									ng-options="categoria for categoria in categoriaCtrl.listarTipoCategoria"  >
+										<option value="">{{categoriaCtrl.categoria.tipo}}</option>
+									</select>
+							</div>				
+					      <div class="input-field col s6">
+					          <input id="categoria" type="text" ng-model="categoriaCtrl.categoria.descricao" class="validate">
+					          <label for="categoria">Categoria</label>
+					        </div>
+					        </div>
+					         <br>
+					        <div class="row">					       
+					        <button class="btn blue-effect blue" type="submit" name="action">Salvar
+							    <i class="material-icons right">send</i>
+							  </button>
+		            </div>		            
+		          </div>
+		        </div>
+ 
+		 </div>
+		 </div>
+ </div>
+ </form>
+ <br><br><br><br>

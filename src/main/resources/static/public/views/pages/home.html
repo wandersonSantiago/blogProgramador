@@ -1,0 +1,125 @@
+  
+  		<div class="light-blue accent-3">
+  				
+  				<div class="carousel" data-indicators="true">
+				    <div class="carousel-fixed-item center">
+				    </div>				   
+				     <a class="carousel-item" href="#one!"><img src="/public/img/carrocel/bootstrap.jpg"></a>	   
+				   
+				     <a class="carousel-item" href="#one!"><img src="/public/img/carrocel/java.jpg"></a>
+				    
+				     <a class="carousel-item" href="#one!"><img src="/public/img/carrocel/scrum.jpg"></a>
+				   
+				     <a class="carousel-item" href="#one!"><img src="/public/img/carrocel/logica.jpg"></a>
+				   </div> 
+				   
+  		</div>
+		  		<div class="section white">
+							    <div class="row container">
+							    <div class="card-panel"> 
+									      <div class="row">
+											<h5>Front-end</h5>
+										</div>
+										<div class="row">
+									     <div class="col s12 m3" ng-repeat="postagem in listarPostagens | filter : busca">
+									          <div class="card center-align">
+									          	<div class="card-image">
+									            	  {{postagem.subcategorias.descricao}}
+									            </div>		        
+									            <div class="card-content">
+									             	  {{postagem.titulo}}
+									            </div>
+									            <div class="card-action">
+									            	  {{postagem.dataPostagem | date : 'dd/MM/yyyy'}}
+									            <a class="waves-effect waves-teal btn-flat" ui-sref="postagemEditar({idPostagem : postagem.id })">Visualizar</a>
+									            </div>
+									          </div>
+									       </div>
+						           </div> </div>
+						           </div>
+							  </div>
+			  		<div class="parallax-container">
+					    <div class="parallax"><img src="/public/img/categoria.png"></div>
+					  </div>
+					  <div class="section white">
+					    <div class="row container">
+					    <div class="card-panel"> 
+							      <div class="row">
+									<h5>Front-end</h5>
+								</div>
+								<div class="row">
+							     <div class="col s12 m3" ng-repeat="postagem in listarPostagens | filter : busca">
+							          <div class="card center-align">
+							          	<div class="card-image">
+							            	  {{postagem.subcategorias.descricao}}
+							            </div>		        
+							            <div class="card-content">
+							             	  {{postagem.titulo}}
+							            </div>
+							            <div class="card-action">
+							            	  {{postagem.dataPostagem | date : 'dd/MM/yyyy'}}
+							            <a class="waves-effect waves-teal btn-flat" ui-sref="postagemEditar({idPostagem : postagem.id })">Visualizar</a>
+							            </div>
+							          </div>
+							       </div>
+				           </div> </div>
+				           </div>
+					  </div>
+					  <div class="parallax-container">
+					    <div class="parallax"><img src="/public/img/carrocel/bootstrap.jpg"></div>
+					  </div>
+					  <div class="section white">
+					    <div class="row container">					  
+							<div class="card-panel">				           
+						           <div class="row">
+										<h5>Back-end</h5>
+									</div>
+									<div class="row">
+								     <div class="col s12 m3" ng-repeat="postagem in listarPostagens | filter : busca">
+								          <div class="card center-align">
+								          	<div class="card-image">
+								            	  {{postagem.subcategorias.descricao}}
+								            </div>		        
+								            <div class="card-content">
+								             	  {{postagem.titulo}}
+								            </div>
+								            <div class="card-action">
+								            	  {{postagem.dataPostagem | date : 'dd/MM/yyyy'}}
+								            <a class="waves-effect waves-teal btn-flat" ui-sref="postagemEditar({idPostagem : postagem.id })">Visualizar</a>
+								            </div>
+								          </div>
+								       </div>
+						           </div>          
+							 </div>
+							 </div>
+							 </div>
+							 <div class="parallax-container">
+					    <div class="parallax"><img src="/public/img/carrocel/logica.jpg"></div>
+					  </div>
+					  <div class="section white">
+					    <div class="row container">					  
+							<div class="card-panel">				           
+						           <div class="row">
+										<h5>Back-end</h5>
+									</div>
+									<div class="row">
+								     <div class="col s12 m3" ng-repeat="postagem in listarPostagens | filter : busca">
+								          <div class="card center-align">
+								          	<div class="card-image">
+								            	  {{postagem.subcategorias.descricao}}
+								            </div>		        
+								            <div class="card-content">
+								             	  {{postagem.titulo}}
+								            </div>
+								            <div class="card-action">
+								            	  {{postagem.dataPostagem | date : 'dd/MM/yyyy'}}
+								            <a class="waves-effect waves-teal btn-flat" ui-sref="postagemEditar({idPostagem : postagem.id })">Visualizar</a>
+								            </div>
+								          </div>
+								       </div>
+						           </div>          
+							 </div>
+							 </div>
+							 </div>
+							 
+
